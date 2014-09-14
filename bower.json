@@ -1,0 +1,19 @@
+{
+  "name": "hackstrap-brunch",
+  "version": "0.0.1",
+  "author": "Marcin Bunsch <marcin.bunsch@gmail.com>",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2",
+    "normalize-css": "2.1.3"
+  },
+  "overrides": {}
+}
