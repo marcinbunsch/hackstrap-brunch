@@ -7,13 +7,23 @@ exports.config =
     javascripts:
       defaultExtension: 'coffee'
 
+      order:
+        before: [
+          /^bower_components\//
+        ]
+
       joinTo:
-        'js/app.js': /^app/
-        'js/vendor.js': /^bower_components[\\/](?!html5shiv|mocha|chai|sinon|sinon-chai)/
+        'js/app.js': /^(app|bower_components)\//
 
     stylesheets:
       defaltExtension: 'sass'
 
+      order:
+        before: [
+          /^bower_components\//
+        ]
+
       joinTo:
-        'css/styles.css': /^(bower_components[\\/](?!mocha|chai|sinon|sinon-chai)|app)/
+        'css/styles.css': /^(app|bower_components)\//
+
 
