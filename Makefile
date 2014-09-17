@@ -7,4 +7,6 @@ dev:
 	brunch watch --server
 
 production:
+	rm -rf public
 	brunch build --production
+
