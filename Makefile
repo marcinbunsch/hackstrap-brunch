@@ -18,3 +18,11 @@ release: production
 	git push origin gh-pages
 	git checkout master
 
+gh-pages:
+	git checkout --orphan gh-pages
+	git rm -rf .
+	git checkout master -- .gitignore
+	git add .
+	git commit -m "Start Github pages"
+	git push origin gh-pages
+
