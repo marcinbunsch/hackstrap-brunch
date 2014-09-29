@@ -3,7 +3,7 @@ all:
 	bower i
 	brunch build
 
-dev:
+watch:
 	brunch watch --server
 
 production:
